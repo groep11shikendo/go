@@ -12,7 +12,7 @@ import (
 )
 
 const maxUploadSize = 100 * 1024 * 1024 // 100 mb
-var uploadPath = filepath.Dir("/var/lib/shikendo/")
+var uploadPath = filepath.Dir("F:\\School\\fileserver\\")
 
 func main() {
 	http.HandleFunc("/upload", uploadFileHandler())
@@ -62,7 +62,8 @@ func uploadFileHandler() http.HandlerFunc {
 		switch detectedFileType {
 		case "image/jpeg", "image/jpg":
 		case "image/gif", "image/png":
-		case "application/pdf":
+		case "video/mp4", "video/mkv", "video/avi", "video/mov", "video/wmv", "video/flv", "video/webm":
+		case "image/tiff", "image/bmp", "image/webp":
 			break
 		default:
 			renderError(w, "INVALID_FILE_TYPE", http.StatusBadRequest)
