@@ -62,3 +62,7 @@ $ ufw deny 9999
 
 ## Contributers
 - [DahRealPandaaa](https://github.com/DahRealPandaaa)
+- [Geerten123](https://github.com/Geerten123)
+- [mikeee1](https://github.com/mikeee1)
+- [MitchvdG](https://github.com/MitchvdG)
+- [Rick van der Spek](https://github.com/S142500)
